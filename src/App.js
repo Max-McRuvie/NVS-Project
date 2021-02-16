@@ -1,3 +1,4 @@
+import React from "react";
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './scss/tools.scss';
@@ -49,8 +50,16 @@ function App() {
                     </div>
                     <form novcalidate date-testid="PersonalDetailsForm">
                       <div className="mb-20 row form-group">
+                        <div className="col-md-6">
+                          <input id="firstName" name="firstName" placeholder="FIRST NAME" data-testid="firstName" type="" class="form-control" aria-invalid="false" value=""></input>
+                        </div>
+                        <div className="col-md-6">
+                          <input id="lastName" name="lastName" placeholder="SURNAME" data-testid="lastName" type="" class="form-control" aria-invalid="false" value=""></input>
+                        </div>
+                        <div className="col-md-6"></div>
+                      </div>
+                      <div className="mb-20 row form-group">
                           <div className="col">
-                            
                             <input id="institutionName" name="institutionName" data-testid="institutionName" placeholder="INSTITUTION NAME" type="" class="form-control" aria-invalid="false" value=""></input>
                           </div>
                       </div>
