@@ -16,7 +16,7 @@ function App() {
             <div className="row">
               <div className="pb-100 col-11 col-sm-11 col-md-11">
                 <NavBar />
-                <div className="col-md-4 offset-md-4">
+                <div className="col-md-5 offset-md-4">
                   <WelcomeMessage/>
                   <CertificationForm/>
                 </div>
