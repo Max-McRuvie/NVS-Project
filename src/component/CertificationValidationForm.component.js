@@ -14,7 +14,6 @@ class CertificationValidationForm extends React.Component {
             course : "",
             gradYear : ""
         }
-
     }
 
     onFormInputChange = (name) => (event) => {
@@ -23,11 +22,16 @@ class CertificationValidationForm extends React.Component {
     };
 
     onFormSubmit = () => (event) => {
-        console.log(this.state)
         event.preventDefault();
+
+        fetch("https://ptsv2.com/t/gpq0i-1619372316/post", {
+            method: "POST",
+            body: JSON.stringify(this.state)
+        })
+            .then(response => response.text())
+            .then(text => console.log(text));
+
     };
-
-
 
     render() {
         return (
